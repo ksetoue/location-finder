@@ -1,10 +1,14 @@
 // 'use strict'
 
+import 'dotenv/config';
 import express from 'express';
 import bodyParser from 'body-parser';
 
 
 const server = express();
+// const normalizePort = require('normalize-port');
+ 
+const port = process.env.PORT || '3000';
 
 server.use(bodyParser.urlencoded({
     extended: true
@@ -18,7 +22,6 @@ server.post('/getPlaces', (req, res) => {
     res.send('hello');
 });
 
-
-server.listen(3000, function () {
-    console.log('App listening on port 3000');
+server.listen(port, function () {
+    console.log(`App listening on port ${port}`);
 });

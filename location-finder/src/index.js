@@ -12,15 +12,6 @@ const port = process.env.PORT || '3000';
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// app.post('/getPlaces', (req, res) => {
-    // change to call router 
-    // console.log(req.body);
-    // res.send('hello');
-
-    //call route and send return to client
-    
-// });
-
 // Endpoints
 app.use('/places', PlacesRouter);
 

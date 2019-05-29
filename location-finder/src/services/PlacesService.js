@@ -1,25 +1,24 @@
 import 'dotenv/config';
-import axios from 'axios';
+import client from '@google/maps';
 
-// let request = {
-//     url: 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?',
-//     apiKey: process.env.GOOGLE_PLACES_API_KEY, 
-// }
+const googleMapsClient = client.createClient({ 
+    key: `${process.env.GOOGLE_PLACES_API_KEY}`,
+    Promise: Promise, 
+});
 
 let PlacesServices = {};
 
 PlacesServices.searchPlaces = (...places) => {
-    // return 'hello there from searchPlaces'; 
 
-    let search = `https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=${request.apiKey}`;
-
-    axios.get(search)
-        .then(response => {
-            console.log('service', response.data);
+    googleMapsClient.places({ query: 'statue of liberty' })
+        .asPromise() 
+        .then((response) => {
+            console.log('response: ', response);    
+            console.log(response.json.results);
         })
-        .catch(err => {
+        .catch((err) => {
             console.log(err);
-        });    
+        });
 }
 
 module.exports = PlacesServices;

@@ -10,7 +10,7 @@ const googleMapsClient = client.createClient({
 
 let PlacesServices = {};
 
-function getPlacesMapsAPI (queryItem) {
+PlacesServices.searchPlaces = (queryItem) => {
     return new Promise((resolve, reject) => {
         googleMapsClient.places({ query: `${queryItem}` }) 
             .asPromise()
@@ -27,27 +27,9 @@ function getPlacesMapsAPI (queryItem) {
                 resolve(location);
             })
             .catch((err) => {
-                reject(console.log(err));
+                reject(new Error({ message: `An error ocurred while processing location coordinates: ${err}` }));
             });
     });
-}
-
-PlacesServices.searchPlaces = (places) => {
-    if (!places) {
-        return new Error('This is a invalid input. Please, see the documentation for more info.\n');
-    }
-
-    let locations = []; 
-    
-    places.forEach( element => {
-        let promise = getPlacesMapsAPI(element);
-        locations.push(promise);
-    });
-
-    Promise.all(locations)
-        .then(results => {
-            console.log(results);
-        });
 }
 
 module.exports = PlacesServices;

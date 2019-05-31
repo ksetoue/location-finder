@@ -1,6 +1,6 @@
 
 import PlaceServices from '../services/PlacesService'; 
-// import DistanceServices from '../services/DistanceService'; 
+import DistanceServices from '../services/DistanceService'; 
 
 let PlacesController = {}; 
 
@@ -17,12 +17,14 @@ PlacesController.getLocations = (req, res) => {
     
     Promise.all(locations)
         .then(results => {
-            return results;
+            return DistanceServices.getDistances(results);
+                                    
+            // from location => get the one with smaller distance
+            // find in the results, add the correspondent
         })
         .catch(err => {
             return new Error({ message: `An error ocurred while processing location coordinates: ${err}` });
         });
-
 
     return res.status(200).json({ message: 'Hello from test controller' });
 }

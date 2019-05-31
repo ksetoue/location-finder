@@ -1,0 +1,614 @@
+[
+  {
+    "id": "5a0d7e67078e35af0c456a277df9ffba7c1e4da6",
+    "name": "Statue of Liberty",
+    "lat": 40.6892494,
+    "long": -74.04450039999999
+  },
+  {
+    "id": "5feb0149417453f1cda054aaca1cc29a2b50fd37",
+    "name": "Nova Iorque, NY 10038, EUA",
+    "lat": 40.7071498,
+    "long": -74.0021019
+  },
+  {
+    "id": "b0a50aabedf1dadc7f3460e635fcb20645327d44",
+    "name": "88 Pine St, New York, NY 10005, EUA",
+    "lat": 40.7056685,
+    "long": -74.00609589999999
+  },
+  {
+    "id": "fc2f5d552e910236c251a2af84c215c7437a32e7",
+    "name": "60 Front St, Hempstead, NY 11550, EUA",
+    "lat": 40.7034734,
+    "long": -73.63470509999999
+  },
+  {
+    "name": "Alamo"
+  },
+  {
+    "id": "be8d7cf9dc8bc9dddb5ee6bdbea4d853482b59ab",
+    "name": "Alhambra",
+    "lat": 37.1760783,
+    "long": -3.5881413
+  },
+  {
+    "id": "f9d02da40a34512f37d2d8488a1cf66a95dd274a",
+    "name": "Andros Island",
+    "lat": 24.7063805,
+    "long": -78.0195387
+  },
+  {
+    "id": "878c06f57ffe5c1fa2c0552714411c8c1c898bc3",
+    "name": "Angel Falls",
+    "lat": 5.970125599999999,
+    "long": -62.53621989999999
+  },
+  {
+    "id": "caae23e9da012ff05938817298ed58682d2432fa",
+    "name": "Angkor Wat, Cambodia",
+    "lat": 13.4124693,
+    "long": 103.8669857
+  },
+  {
+    "id": "9d702cb6a6953b39daaea6f212da69873db50f3c",
+    "name": "Atlantic City Boardwalk",
+    "lat": 39.3521179,
+    "long": -74.4437818
+  },
+  {
+    "id": "58d975677cd2bbc0ac74ef09ff4e98e08befb892",
+    "name": "Ayers Rock",
+    "lat": -25.3444277,
+    "long": 131.0368822
+  },
+  {
+    "id": "5373d9309fe9e4b25bd6746c7c2021df35ec279c",
+    "name": "Big Ben",
+    "lat": 51.50072919999999,
+    "long": -0.1246254
+  },
+  {
+    "id": "e6a85bb51dd29cfb7b5e4a953455f26238ce6329",
+    "name": "Bora Bora",
+    "lat": -16.5004126,
+    "long": -151.7414904
+  },
+  {
+    "id": "ad6aaec7b7b0fa2c97a127c24845d76135e760ae",
+    "name": "British Museum",
+    "lat": 51.5194133,
+    "long": -0.1269566
+  },
+  {
+    "id": "e35f115a455b1801e632d549cc107a9481832573",
+    "name": "Canals of Amsterdam",
+    "lat": 52.3720805,
+    "long": 4.8886558
+  },
+  {
+    "id": "25e429340fad8e0ee388e8b1ff849126005a5b99",
+    "name": "Cathedral of Seville",
+    "lat": 37.3858247,
+    "long": -5.9931068
+  },
+  {
+    "id": "0d2c4685cf803b6b76f5c8efd52280642387c3bf",
+    "name": "Cave of Crystals",
+    "lat": 27.8507517,
+    "long": -105.4969544
+  },
+  {
+    "id": "ee389d0015816e0a49940b0ffb456b31cb2daa73",
+    "name": "Christ the Redeemer",
+    "lat": -22.951916,
+    "long": -43.2104872
+  },
+  {
+    "id": "4579fbe182611e64c7690a168f212dfd46cadc53",
+    "name": "Cinque Terre National Park",
+    "lat": 44.12810899999999,
+    "long": 9.7123907
+  },
+  {
+    "id": "5ddc4dc1f73c354fcb055ab40358155b9cc378ea",
+    "name": "Colosseum",
+    "lat": 41.8902102,
+    "long": 12.4922309
+  },
+  {
+    "id": "665276b773574cfc9293bdcec494134eb5c4ce3d",
+    "name": "Crater Lake",
+    "lat": 42.9445872,
+    "long": -122.1090039
+  },
+  {
+    "id": "bed45b460e66a2af8c043938400a104984ad5c43",
+    "name": "Dead Sea",
+    "lat": 31.5590287,
+    "long": 35.4731895
+  },
+  {
+    "id": "865f9afe003b708beb07df05029cfcd90fff83c8",
+    "name": "Death Valley",
+    "lat": 36.5053891,
+    "long": -117.0794078
+  },
+  {
+    "id": "fc07bee661589c1ff41de5dfbdf65308750080a1",
+    "name": "Devil's Tower",
+    "lat": 44.5902098,
+    "long": -104.7146168
+  },
+  {
+    "id": "cb7330379c619e7f699913f25ce05f615e0f3a19",
+    "name": "Dome of the Rock",
+    "lat": 31.7780191,
+    "long": 35.2354079
+  },
+  {
+    "id": "69488cfbe07a5000ca5cde579ba8737ac07555c9",
+    "name": "Easter Island",
+    "lat": -27.112723,
+    "long": -109.3496865
+  },
+  {
+    "id": "7656260f957b68a9673d268fed9f07d30bd5f06a",
+    "name": "Edinburgh Castle",
+    "lat": 55.9485947,
+    "long": -3.1999135
+  },
+  {
+    "id": "fd0cfb424bbd79bf28a832e1764f1c2aa5927714",
+    "name": "Eiffel Tower",
+    "lat": 48.85837009999999,
+    "long": 2.2944813
+  },
+  {
+    "id": "bc232d2422e7068b2a2ffb314f02e3733dd47796",
+    "name": "Empire State Building",
+    "lat": 40.7484405,
+    "long": -73.98566439999999
+  },
+  {
+    "id": "5a30fecd737ac2c4fd47a27e04d98cf35c36c6d2",
+    "name": "The Forbidden City, China",
+    "lat": 39.9163447,
+    "long": 116.3971546
+  },
+  {
+    "id": "41ec0a738850aaaf2bd9addb19aff011f8f9d307",
+    "name": "French Quarter",
+    "lat": 29.9584426,
+    "long": -90.0644107
+  },
+  {
+    "id": "108775422ca594258778f6da4cbf919f4c2de4da",
+    "name": "Galapagos Islands",
+    "lat": -0.383106,
+    "long": -90.4233344
+  },
+  {
+    "id": "75fd75f18e4cff9f216e968fc259d0ceee721646",
+    "name": "Gateway Arch",
+    "lat": 38.6246855,
+    "long": -90.1854426
+  },
+  {
+    "id": "24887a09e4eb0c6e18a401aa7ed68beb1a8ffae2",
+    "name": "Gettysburg Battlefield",
+    "lat": 39.8132494,
+    "long": -77.233732
+  },
+  {
+    "id": "d8e37d700210dfdf658302e83a67f61eba971b27",
+    "name": "Glacier Bay Basin",
+    "lat": 58.7,
+    "long": -136.1499999
+  },
+  {
+    "id": "81a8d12745bdc8b0e9ff2b46a40efcbbfdfbedc8",
+    "name": "Glacier National Park",
+    "lat": 48.7596128,
+    "long": -113.7870225
+  },
+  {
+    "id": "1a4994dc27794c12f5058ea3ab2499b3f7e3dc37",
+    "name": "Glowworm Cave",
+    "lat": -38.260783,
+    "long": 175.1035985
+  },
+  {
+    "id": "2213bf496e53a020f356d0274a5a75a4a98907fa",
+    "name": "Golden Gate Bridge",
+    "lat": 37.8199286,
+    "long": -122.4782551
+  },
+  {
+    "id": "dd6d7cb56b9d3d87c5b3cc961484c8dbeda4856e",
+    "name": "Grand Canal",
+    "lat": 31.1542828,
+    "long": 120.6596215
+  },
+  {
+    "id": "00df4c9afe2fe7fe2a7ee3bf18efbb9576343bb4",
+    "name": "The Grand Canyon",
+    "lat": 36.1069652,
+    "long": -112.1129972
+  },
+  {
+    "id": "0f7ddb9cccf255673f868add3cc074a499e8f355",
+    "name": "Grand Mosque in Mecca",
+    "lat": 21.4228714,
+    "long": 39.8257347
+  },
+  {
+    "id": "3bad80a610121d955202ca4401aa0023aa443e0a",
+    "name": "Great Barrier Reef",
+    "lat": -18.2870668,
+    "long": 147.6991918
+  },
+  {
+    "id": "548d64a9ad64895346277e48f7f263ad6750e39a",
+    "name": "Great Mosque of Cordoba",
+    "lat": 37.8789056,
+    "long": -4.7793869
+  },
+  {
+    "id": "380e091d9e963190023ebc7114ad1b970e5a4209",
+    "name": "Great Wall of China",
+    "lat": 40.4319077,
+    "long": 116.5703749
+  },
+  {
+    "id": "27aafedda22667c6421648a281189a888fcc47b4",
+    "name": "Hagia Sophia",
+    "lat": 41.008583,
+    "long": 28.980175
+  },
+  {
+    "id": "55cec43c52d15ed4a0ab78a283d4109f026240c7",
+    "name": "Hawaii Volcanoes National Park",
+    "lat": 19.4193697,
+    "long": -155.2884969
+  },
+  {
+    "id": "5749658789169518975b4cb80e548a0848899683",
+    "name": "Hollywood Boulevard",
+    "lat": 34.1015921,
+    "long": -118.3333515
+  },
+  {
+    "id": "200f5fcd6e786de7c1136e9a4dfb6430e3de9054",
+    "name": "Iguazu Falls",
+    "lat": -25.695259,
+    "long": -54.4366662
+  },
+  {
+    "id": "54f8e9cf7161034d25d1af68456c922c600409f8",
+    "name": "Kiyomizu Dera",
+    "lat": 34.9948561,
+    "long": 135.7850463
+  },
+  {
+    "id": "afa721ec3354a8eef81b33425314b5bb6b7fa98a",
+    "name": "Kremlin",
+    "lat": 55.7520233,
+    "long": 37.6174994
+  },
+  {
+    "id": "cf4454f66890916418c12d3c74ae5b4d2469ffe3",
+    "name": "Lake Titicaca",
+    "lat": -15.9254,
+    "long": -69.33539999999999
+  },
+  {
+    "id": "04d727518ca6df4d5f527287ddd325517375a86b",
+    "name": "Las Ramblas",
+    "lat": 41.3814899,
+    "long": 2.1728297
+  },
+  {
+    "id": "b659fda58a754efe28597dbc2367a262e3ffd2db",
+    "name": "Las Vegas Strip",
+    "lat": 36.1147065,
+    "long": -115.1728484
+  },
+  {
+    "id": "2cf9c46fa962f1d6aa7b67e7cb48eb74987fdcce",
+    "name": "The Leaning Tower of Pisa",
+    "lat": 43.722952,
+    "long": 10.396597
+  },
+  {
+    "id": "9a007d81ca8f47ed30ddaf39c4174ef773b351e0",
+    "name": "Louvre Museum",
+    "lat": 48.8606111,
+    "long": 2.337644
+  },
+  {
+    "id": "53edbde69f0e509a9f51097ac3d3099a4784ddfc",
+    "name": "Machu Picchu",
+    "lat": -13.1631412,
+    "long": -72.5449629
+  },
+  {
+    "id": "9e13af671f85caf92c068973be27dc504bdb9d05",
+    "name": "Matterhorn",
+    "lat": 45.976575,
+    "long": 7.6584519
+  },
+  {
+    "id": "5c223b5b7b86c83a48d20f76b3a0a4a89bcea9e7",
+    "name": "Mayan Pyramids of Chichen Itza",
+    "lat": 20.6842849,
+    "long": -88.5677826
+  },
+  {
+    "id": "f732f202150af1f14ae8a057a1014ceea6b33fc4",
+    "name": "Metropolitan Museum of Art",
+    "lat": 40.7794366,
+    "long": -73.963244
+  },
+  {
+    "id": "3102e506bcc19c3de01debdfadbdeeb12958984b",
+    "name": "Mount Everest",
+    "lat": 27.9881206,
+    "long": 86.9249751
+  },
+  {
+    "id": "2f897daccc41cb2c93f5d56414c615f9c2389ad9",
+    "name": "Mount Fuji",
+    "lat": 35.3606255,
+    "long": 138.7273634
+  },
+  {
+    "id": "2b0fc11c9a0ed0c3478bd84975b4c85f5b255db4",
+    "name": "Mount Kilimanjaro",
+    "lat": -3.0674247,
+    "long": 37.35562729999999
+  },
+  {
+    "id": "207948a8412cbeea18b59b5912dbd914fe9b4a50",
+    "name": "Mount Rushmore",
+    "lat": 43.87910249999999,
+    "long": -103.4590667
+  },
+  {
+    "id": "0c0e6fad6e01e62a2ed345fc3d5ed85bd4cf12b2",
+    "name": "Napa Valley",
+    "lat": 38.5024689,
+    "long": -122.2653887
+  },
+  {
+    "id": "ca85a5098578524cfa07782325fc417e775d8e2c",
+    "name": "Ngorongoro Crater",
+    "lat": -3.1617522,
+    "long": 35.5876697
+  },
+  {
+    "id": "b207079d7179a1aca27d07354cef2ef1b6fbf912",
+    "name": "Niagara Falls",
+    "lat": 43.0962143,
+    "long": -79.0377388
+  },
+  {
+    "id": "451a0ef9094206e1dfc0790b27b0c90fd926ae22",
+    "name": "Notre Dame Cathedral",
+    "lat": 48.8536521,
+    "long": 2.3477174
+  },
+  {
+    "id": "1bc8635616a12a41feeaee69b931ba536439eddc",
+    "name": "Pacific Rim National Park",
+    "lat": 48.79193129999999,
+    "long": -125.156359
+  },
+  {
+    "id": "ef0029f69fa3298668c92740c3411fbbb0b515a2",
+    "name": "Pebble Beaches of Nice",
+    "lat": 43.6941762,
+    "long": 7.2598221
+  },
+  {
+    "id": "c25580228f1be62b59494b80542f7b94baf3574d",
+    "name": "Petra",
+    "lat": 30.3284544,
+    "long": 35.4443622
+  },
+  {
+    "id": "9a05f008a307cde8e9976c970a8de27acf6ba54e",
+    "name": "Petronas Twin Towers",
+    "lat": 3.1577966,
+    "long": 101.7119592
+  },
+  {
+    "id": "20da01767fdb27e5023ef0777d9f318f34b1b44c",
+    "name": "Portland Head Lighthouse",
+    "lat": 43.6230726,
+    "long": -70.20788240000002
+  },
+  {
+    "id": "b02ffcd0ca60d72882d67a1fb81ab5abcc3b9bd0",
+    "name": "Puerta Del Sol",
+    "lat": 40.4169473,
+    "long": -3.7035285
+  },
+  {
+    "id": "bfac63ba37184133826423d8796b308f82435ea5",
+    "name": "Pyramids of Giza",
+    "lat": 29.9792345,
+    "long": 31.1342019
+  },
+  {
+    "id": "289a01721635bfb9376ef38932e7088c24299b8e",
+    "name": "Redwood National Park",
+    "lat": 41.2131788,
+    "long": -124.0046275
+  },
+  {
+    "id": "6f8399940257a8783df4fb4310729f1653dcf663",
+    "name": "Rock of Gibraltar",
+    "lat": 36.1440934,
+    "long": -5.3417241
+  },
+  {
+    "id": "4a7036773fe75c48ca48060242290c65ea8fdd49",
+    "name": "Rocky Mountain National Park, U.S.",
+    "lat": 40.3427932,
+    "long": -105.6836389
+  },
+  {
+    "name": "Ruins of Athens"
+  },
+  {
+    "name": "Ruins of Pompeii"
+  },
+  {
+    "id": "34d9063d38ed27cafccd7cafe63b78073ae69364",
+    "name": "Sagrada Familia",
+    "lat": 41.4036299,
+    "long": 2.1743558
+  },
+  {
+    "id": "3c0b6f3cfc6f0828bd9b35c7652cd18debf8d326",
+    "name": "Willis Tower (Sears Tower)",
+    "lat": 41.8788764,
+    "long": -87.6359149
+  },
+  {
+    "id": "339cc6f0dbd2a1a60cc00381826018f0d916c5f9",
+    "name": "Sedlec Ossuary",
+    "lat": 49.9617819,
+    "long": 15.288043
+  },
+  {
+    "id": "43bdd609a239cf4ac019f9bb9e7142e724e30e1d",
+    "name": "Sistine Chapel",
+    "lat": 41.9029468,
+    "long": 12.4544835
+  },
+  {
+    "id": "de41cd09208450f5d4312b88728f46309471e4c7",
+    "name": "Smithsonian Institution",
+    "lat": 38.8859942,
+    "long": -77.0212813
+  },
+  {
+    "id": "2d3d3592254d212ad01ce51620be345b480df9bb",
+    "name": "Space Needle",
+    "lat": 47.6205063,
+    "long": -122.3492774
+  },
+  {
+    "id": "85c7cf29b5692b6fd6e3394fe30e35aa48a28a8f",
+    "name": "St. Peter's Basilica",
+    "lat": 41.9021667,
+    "long": 12.4539367
+  },
+  {
+    "id": "5a0d7e67078e35af0c456a277df9ffba7c1e4da6",
+    "name": "Statue of Liberty",
+    "lat": 40.6892494,
+    "long": -74.04450039999999
+  },
+  {
+    "id": "4c436dce7d11dbbf00d48f1fcf6b013320b834d5",
+    "name": "Stonehenge",
+    "lat": 51.17888199999999,
+    "long": -1.826215
+  },
+  {
+    "id": "e1f49965b944842c80c615640397220545ac95f2",
+    "name": "Sydney Opera House",
+    "lat": -33.8567844,
+    "long": 151.2152967
+  },
+  {
+    "id": "dcc9586b99ab0f0471fccecbe2dbb40fdc1fc2b5",
+    "name": "Taj Mahal",
+    "lat": 27.1750151,
+    "long": 78.0421552
+  },
+  {
+    "name": "Temple of the Golden Pavilion"
+  },
+  {
+    "id": "230dc95fd19bd488f4bc03944f9ba901fcbeb213",
+    "name": "Teotihuacan",
+    "lat": 19.6860799,
+    "long": -98.87163609999999
+  },
+  {
+    "id": "d2e16bf25a67dc19790c09c76f529abf99c59c24",
+    "name": "Tian Tan Buddha",
+    "lat": 22.2539847,
+    "long": 113.904984
+  },
+  {
+    "id": "94ff3b04e99737f67454c5f9d206c8241a4eec44",
+    "name": "Times Square",
+    "lat": 40.7579747,
+    "long": -73.9855426
+  },
+  {
+    "id": "11d69f9b2a92b4592aae2fc71462aa244bf0cd40",
+    "name": "Varanasi",
+    "lat": 25.3176452,
+    "long": 82.9739144
+  },
+  {
+    "id": "d41220cb036a725efc0d6b6cdd5b5af754c362f5",
+    "name": "Victoria Falls",
+    "lat": -17.9242993,
+    "long": 25.8572003
+  },
+  {
+    "id": "d91fbaefc3f302ea498aa9c76a129b1fbbc6b42f",
+    "name": "Wailing Wall",
+    "lat": 31.7767189,
+    "long": 35.2345085
+  },
+  {
+    "id": "f879b451340b8676f7d643ee25331b931a2cab49",
+    "name": "Walt Disney World Resort",
+    "lat": 28.385233,
+    "long": -81.563874
+  },
+  {
+    "id": "2598a3577d35a8f9ce6cc12c6c20d59fe3f9d1fc",
+    "name": "The Washington Monument",
+    "lat": 38.8894838,
+    "long": -77.0352791
+  },
+  {
+    "id": "8fe0ed06b156f05a2e83ad155dbc74d93f666dd4",
+    "name": "White Cliffs of Dover",
+    "lat": 51.13446889999999,
+    "long": 1.3573028
+  },
+  {
+    "id": "961fbdc3bf1fb3969cbf6421e9ebde0d837b8496",
+    "name": "White House",
+    "lat": 38.8976763,
+    "long": -77.0365298
+  },
+  {
+    "id": "af82a29ae3ad229fdf2e4733674ec5d379d6c44c",
+    "name": "Winchester Cathedral",
+    "lat": 51.0606892,
+    "long": -1.3131538
+  },
+  {
+    "id": "fb2429c43eec383d3740f2d5c054a2d3bc1eae84",
+    "name": "Yosemite National Park",
+    "lat": 37.8651011,
+    "long": -119.5383294
+  },
+  {
+    "id": "4c1175fd9f4fa64be77345352485cd88b5e216eb",
+    "name": "Zion National Park",
+    "lat": 37.2982022,
+    "long": -113.0263005
+  }
+]

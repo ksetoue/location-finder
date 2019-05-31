@@ -20,33 +20,11 @@ function getPairs (locations) {
     return pairs;
 }
 
-function getDistance (pair) {
-    if (typeof pair != 'object') {
-        return new Error('Not a valid input for getDistance.');
-    }
-
-    pair._distance = calculateDistanceKm(pair._from._lat, pair._from._long, pair._to._lat, pair._to._long,);
-
-    return pair;
-}
-
-// Haversine formula - used to calculate distance between two points in a sphere
-function calculateDistanceKm (lat1,lon1,lat2,lon2) {
-    const earthRadius = 6371.16; // Radius of the earth in km
-    let dLat = deg2rad(lat2-lat1);  // deg2rad below
-    let dLon = deg2rad(lon2-lon1); 
-    let a = 
-        Math.sin(dLat/2) * Math.sin(dLat/2) +
-        Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
-        Math.sin(dLon/2) * Math.sin(dLon/2); 
-    let c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
-    let distance = earthRadius * c; // Distance in km
-
-    return distance;
-}
-  
-function deg2rad(deg) {
-    return deg * (Math.PI/180);
+// TODO: improve naming 
+function calculateDistance (x1,y1,x2, y2) {
+    let x = x2 - x1;
+    let y = y2 - y1;
+    return Math.sqrt(x**2 + y**2);
 }
 
 DistanceServices.getDistances = (locations) => {
@@ -54,15 +32,30 @@ DistanceServices.getDistances = (locations) => {
         return [];
     }
 
-    let pairs = getPairs(locations);
-    let processedPairs = [];
+    for(let index = 0; index < locations.length; index++) {
+        let smallerDistance = Infinity; 
+        for(let j = 0; j < locations.length; j++) {
+            if (index == j) {
+                continue;
+            }
 
-    pairs.forEach(element => {
-        let p = getDistance(element);
-        processedPairs.push(p); 
-    });
+            let distance = calculateDistance(
+                locations[index].lat,
+                locations[index].long,
+                locations[j].lat,
+                locations[j].long
+            )
 
-    return processedPairs;
+            if (distance >= smallerDistance) {
+                continue;
+            }
+
+            smallerDistance = distance;
+            locations[index].near = locations[j];
+        }
+    }
+
+    return locations;
 }
 
 

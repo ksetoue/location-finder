@@ -9,28 +9,31 @@ const googleMapsClient = client.createClient({
 });
 
 let PlacesServices = {};
+const processResponse = name => response => {
+    let locationObj = response.json.results[0]; 
 
-PlacesServices.searchPlaces = (queryItem) => {
-    return new Promise((resolve, reject) => {
-        console.log('search: ', queryItem);
-        googleMapsClient.places({ query: `${queryItem}` }) 
-            .asPromise()
-            .then((response) => {   
-                let locationObj = response.json.results[0]; 
-        
-                let location = new Location( 
-                    locationObj.id,
-                    locationObj.name, 
-                    locationObj.geometry.location.lat,
-                    locationObj.geometry.location.lng,
-                    locationObj.formatted_address
-                )
-                resolve(location);
-            })
-            .catch((err) => {
-                reject(new Error({ message: `An error ocurred while processing location coordinates: ${err}` }));
-            });
-    });
+    if(!locationObj) {
+        return new Location({ name });
+    }
+
+    let location = new Location({ 
+        name, 
+        id: locationObj.id,
+        lat: locationObj.geometry.location.lat,
+        long: locationObj.geometry.location.lng,
+        addess: locationObj.formatted_address
+    })
+    
+    return location;
 }
+
+PlacesServices.searchPlaces = queryItem => googleMapsClient
+    .places({ query: `${queryItem}` }) 
+    .asPromise()
+    .then(processResponse(queryItem))
+    // .then(result => {
+    //     console.log(result);
+    //     return result;
+    // })
 
 module.exports = PlacesServices;

@@ -1,4 +1,6 @@
 
+import fs from 'fs';
+import getMock from '../services/GetMock';
 import PlaceServices from '../services/PlacesService'; 
 import DistanceServices from '../services/DistanceService'; 
 
@@ -11,22 +13,34 @@ PlacesController.getLocations = (req, res) => {
         return new Error('This is a invalid input. Please, see the documentation for more info.\n');
     }
 
-    let locations = places.map(el => {
-        return PlaceServices.searchPlaces(el);
-    });
-    
-    Promise.all(locations)
+    Promise.resolve(getMock())
         .then(results => {
-            return DistanceServices.getDistances(results);
-                                    
-            // from location => get the one with smaller distance
-            // find in the results, add the correspondent
-        })
-        .catch(err => {
-            return new Error({ message: `An error ocurred while processing location coordinates: ${err}` });
-        });
+            let processableLocations = [];
+            let unprocessable = []; 
 
-    return res.status(200).json({ message: 'Hello from test controller' });
+            for(let result of results) {
+                if(!result.id) {
+                    unprocessable.push(result);
+                    continue;
+                }
+                processableLocations.push(result);
+            }
+
+            res.status(200).json(DistanceServices.getDistances(processableLocations));
+        })
+        .catch(err => res.status(500).json(err));
+
+    // work in progress
+    // let locations = places.map(el => {
+    //     return PlaceServices.searchPlaces(el);
+    // });
+    
+    // Promise.all(locations)
+    //     .then( results => {
+    //         //add logic
+    //     })
+    //     .catch(err => res.status(500).json(err));
+
 }
 
 module.exports = PlacesController;

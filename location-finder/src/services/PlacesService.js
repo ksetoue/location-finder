@@ -12,6 +12,7 @@ let PlacesServices = {};
 
 PlacesServices.searchPlaces = (queryItem) => {
     return new Promise((resolve, reject) => {
+        console.log('search: ', queryItem);
         googleMapsClient.places({ query: `${queryItem}` }) 
             .asPromise()
             .then((response) => {   

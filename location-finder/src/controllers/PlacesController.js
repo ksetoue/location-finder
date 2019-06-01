@@ -1,7 +1,7 @@
 
-import getMock from '../services/GetMock';
-import PlaceServices from '../services/PlacesService'; 
-import DistanceServices from '../services/DistanceService'; 
+// const getMock = require('../services/GetMock');
+const PlaceServices = require('../services/PlacesService'); 
+const DistanceServices = require('../services/DistanceService'); 
 
 let PlacesController = {}; 
 
@@ -40,36 +40,17 @@ function getPairs (processedLocations) {
 PlacesController.getLocations = (req, res) => {
     let places = req.body; 
 
-    if (!places) {
-        return new Error('This is a invalid input. Please, see the documentation for more info.\n');
+    if (!places || places.length < 50) {
+        return res.status(400).json('Payload must contain more than 50 items.');
     }
 
-    Promise.resolve(getMock())
-        .then(results => {
-            let processableLocations = [];
-            let unprocessable = []; 
+    if (places.length > 100) {
+        return res.status(413).json('Payload must contain less than 100 items.');
+    }
 
-            for(let result of results) {
-                if(!result.id) {
-                    unprocessable.push(result);
-                    continue;
-                }
-                processableLocations.push(result);
-            }
 
-            let processedLocations = DistanceServices.getDistances(processableLocations);
-
-            res.status(200).json(getPairs(processedLocations));
-        })
-        .catch(err => res.status(500).json(err));
-
-    // work in progress - without mock
-    // let locations = places.map(el => {
-    //     return PlaceServices.searchPlaces(el);
-    // });
-    
-    // Promise.all(locations)
-    //     .then( results => {
+    // Promise.resolve(getMock())
+    //     .then(results => {
     //         let processableLocations = [];
     //         let unprocessable = []; 
 
@@ -86,6 +67,30 @@ PlacesController.getLocations = (req, res) => {
     //         res.status(200).json(getPairs(processedLocations));
     //     })
     //     .catch(err => res.status(500).json(err));
+
+    // work in progress - without mock
+    let locations = places.map(el => {
+        return PlaceServices.searchPlaces(el);
+    });
+    
+    Promise.all(locations)
+        .then( results => {
+            let processableLocations = [];
+            let unprocessable = []; 
+
+            for(let result of results) {
+                if(!result.id) {
+                    unprocessable.push(result);
+                    continue;
+                }
+                processableLocations.push(result);
+            }
+
+            let processedLocations = DistanceServices.getDistances(processableLocations);
+
+            res.status(200).json(getPairs(processedLocations));
+        })
+        .catch(err => res.status(500).json(err));
 
 }
 

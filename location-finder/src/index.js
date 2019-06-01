@@ -1,8 +1,8 @@
-import dotenv from 'dotenv';
-import express from 'express';
-import bodyParser from 'body-parser';
+const dotenv = require('dotenv');
+const express = require('express');
+const bodyParser = require('body-parser');
 
-import PlacesRouter from './routers/PlacesRouter';
+const PlacesRouter = require('./routers/PlacesRouter');
 
 const app = express();
 express.Router();

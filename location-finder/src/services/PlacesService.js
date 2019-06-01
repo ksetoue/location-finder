@@ -1,5 +1,5 @@
-import client from '@google/maps';
-import 'dotenv/config';
+const client = require('@google/maps');
+require('dotenv/config');
 
 import Location from '../model/location';
 

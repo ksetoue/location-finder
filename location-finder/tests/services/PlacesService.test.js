@@ -1,4 +1,4 @@
-import { output } from './mocks/mocks';
+import { output } from '../__mocks__/mocks';
 import PlacesServices from '../../src/services/PlacesService'; 
 
 describe('Get location object using maps', () => {

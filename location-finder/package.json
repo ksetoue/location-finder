@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ksetoue/location-finder#readme",
   "dependencies": {
+    "@babel/polyfill": "^7.4.4",
     "@google/maps": "^0.5.5",
     "axios": "^0.18.0",
     "body-parser": "^1.19.0",

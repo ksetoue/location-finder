@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pre-build": "npm install -g nodemon",
+    "prebuild": "npm install -g nodemon",
     "start": "npm run prebuild && nodemon --exec babel-node ./src/index.js ",
     "test": "jest"
   },

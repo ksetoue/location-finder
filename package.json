@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prebuild": "npm install -g nodemon",
-    "start": "npm run prebuild && nodemon --exec babel-node ./src/index.js ",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start": "node dist/main.js",
+    "webpack": "webpack --mode development",
+    "build": "webpack --mode production",
     "test": "jest"
   },
   "repository": {
@@ -24,13 +26,7 @@
     "axios": "^0.18.0",
     "body-parser": "^1.19.0",
     "dotenv": "^8.0.0",
-    "express": "^4.17.1",
-    "@babel/core": "^7.4.5",
-    "@babel/node": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/register": "^7.4.4",
-    "babel-register": "^6.26.0",
-    "nodemon": "^1.19.1"
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -43,7 +39,10 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.3",
     "jest": "^24.8.0",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-node-externals": "^1.7.2"
   },
   "eslintConfig": {
     "extends": "airbnb-base",

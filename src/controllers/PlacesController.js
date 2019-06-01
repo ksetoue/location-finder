@@ -5,6 +5,9 @@ const DistanceServices = require('../services/DistanceService');
 
 let PlacesController = {}; 
 
+/**
+ * mountPair - receives a Location object and returns a pair, with its closest location
+ */
 function mountPair (location) {
     if (!location.near) {
         return null; 
@@ -19,6 +22,10 @@ function mountPair (location) {
     return obj;
 }
 
+
+/**
+ * getPairs - receives a Location object and returns a pair object
+ */
 function getPairs (processedLocations) {
     let pairs = []; 
 
@@ -37,6 +44,9 @@ function getPairs (processedLocations) {
     return pairs;
 }
 
+/**
+ * getLocations - receives request, reading the body and returnin a json with paired locations
+ */
 PlacesController.getLocations = (req, res) => {
     let places = req.body; 
 
@@ -48,7 +58,7 @@ PlacesController.getLocations = (req, res) => {
         return res.status(413).json('Payload must contain less than 100 items.');
     }
 
-    // work in progress - without mock
+    
     let locations = places.map(el => {
         return PlaceServices.searchPlaces(el);
     });

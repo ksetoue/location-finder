@@ -1,12 +1,18 @@
 let DistanceServices = {};
 
 // TODO: improve naming 
+/**
+ * calculateDistance - return distance between two points
+ */
 function calculateDistance (x1,y1,x2, y2) {
     let x = x2 - x1;
     let y = y2 - y1;
     return Math.sqrt(x**2 + y**2);
 }
 
+/**
+ * getDistances - given a array of locations, returns the closest location for each one, inside the near property
+ */
 DistanceServices.getDistances = (locations) => {
     if (!locations) {
         console.log('not locations');

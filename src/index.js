@@ -16,7 +16,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use('*', cors())
 
-// Endpoints
+/**
+ * @api {post} /places/search/locations 
+ * @apiName Locations
+ *
+ * @apiParam {queryItems} Array of locations.
+ *
+ * @apiSuccess {Json} json with pair of locations and closest location from the same array.
+ */
 app.use('/places', PlacesRouter);
 
 app.listen(port, function () {

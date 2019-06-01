@@ -8,6 +8,10 @@ const googleMapsClient = client.createClient({
 });
 
 let PlacesServices = {};
+
+/**
+ * processResponse - creates a Location object with information about the location
+ */
 const processResponse = name => response => {
     let locationObj = response.json.results[0]; 
 
@@ -22,17 +26,31 @@ const processResponse = name => response => {
         long: locationObj.geometry.location.lng,
         address: locationObj.formatted_address
     });
+
+    clientRedisz
     
     return location;
+}
+
+/**
+ * getLocation - creates a request to the maps API and returns information about the searched location
+ */
+const getLocation = (queryItem) => {
+    let name = queryItem 
+    clientRedis.get(name, (err, result) => {
+        if(!result) {
+            return googleMapsClient
+                .places({ query: `${queryItem}` })  
+                .asPromise()
+                .then(processResponse(queryItem))
+        }
+        return result;
+    });
 }
 
 PlacesServices.searchPlaces = queryItem => googleMapsClient
     .places({ query: `${queryItem}` })  
     .asPromise()
     .then(processResponse(queryItem))
-// .then(result => {
-//     // console.log("result", result);
-//     return result;
-// })
 
 module.exports = PlacesServices;

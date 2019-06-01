@@ -62,7 +62,7 @@ GOOGLE_PLACES_API_KEY=Your key
 GOOGLE_PLACES_OUTPUT_FORMAT=json
 ```
 
-To run the project, make sure you have the following requirements installed: 
+To run the project, make sure you have the following software requirements installed: 
 
 - npm 
 - node 

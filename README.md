@@ -61,6 +61,7 @@ Inside of the `location-finder` folder, run on a shell:
 
 ```sh
 $ npm install 
+$ npm run build 
 $ npm start # starts the application 
 ```
 

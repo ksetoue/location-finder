@@ -20,19 +20,19 @@ const processResponse = name => response => {
         id: locationObj.id,
         lat: locationObj.geometry.location.lat,
         long: locationObj.geometry.location.lng,
-        addess: locationObj.formatted_address
-    })
+        address: locationObj.formatted_address
+    });
     
     return location;
 }
 
 PlacesServices.searchPlaces = queryItem => googleMapsClient
-    .places({ query: `${queryItem}` }) 
+    .places({ query: `${queryItem}` })  
     .asPromise()
     .then(processResponse(queryItem))
-    // .then(result => {
-    //     console.log(result);
-    //     return result;
-    // })
+// .then(result => {
+//     // console.log("result", result);
+//     return result;
+// })
 
 module.exports = PlacesServices;

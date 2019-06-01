@@ -1,5 +1,7 @@
 const fs = require('fs');
 
-export default function getMock () {
+function getMock () {
     return JSON.parse(fs.readFileSync('./mock.txt').toString());
 }
+
+module.exports = getMock; 

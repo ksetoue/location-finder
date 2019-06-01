@@ -1,5 +1,5 @@
 
-export default class Location {
+class Location {
     constructor({ id, name, lat, long, address }) {
         this.id = id;
         this.name = name;
@@ -9,3 +9,5 @@ export default class Location {
         this.near = null;
     }
 }
+
+module.exports = Location;

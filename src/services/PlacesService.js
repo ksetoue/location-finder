@@ -26,8 +26,6 @@ const processResponse = name => response => {
         long: locationObj.geometry.location.lng,
         address: locationObj.formatted_address
     });
-
-    clientRedisz
     
     return location;
 }

@@ -8,12 +8,23 @@ This is a Node.js app, build with express.js that perform the following operatio
 
 ## About 
 
-The architecture proposed for this project (see the image below). The server (index.js) will receive a POST request to the endpoint `/places/search`, with the array of locations to be paired inside the body. Then, the request is redirected to a router, responsible for routing the request to the controller. The controller has the business logic of this API, being responsible for dispatching requests to the PlacesService (calls to the maps API), and then calculating the distances between each pair of location (through DistanceService). 
+The architecture proposed for this project (see the image below) is composed by the following elements: 
 
-After that, each location has a field `near` that contains the nearest location from the array. Then, the controller creates an array with pairs of this locations. 
+1. Server app that receives calls to the endpoint 
+2. A router that redirects requests
+3. A controller that calls the appropriate services 
+4. A service responsible for collecting location info from Google Maps Places API
+5. A service responsible for calculating distances between locations
 
-The project have the following structure: 
+![architecture](https://github.com/ksetoue/location-finder/blob/master/architecture-diag.png)
 
+The server (index.js) receives a POST request to the endpoint `/places/search`, with the array of locations to be paired inside the body of the request. Then, the request is redirected to a router, responsible for routing the request to the controller. The controller has the business logic of this API, being responsible for dispatching requests to the PlacesService (calls to the maps API), and calling the DistanceService that compute distances between each pair of location. 
+
+After that, each location has a field `near` that contains the nearest location from the array, and the controller is able to respond the initial request with a json that contains paired locations of closest places within the initial input. 
+
+Despite of having only one request, this modular structure allows to easily add more routes or different requests.  
+
+The project have the following folder structure: 
 
 ```
 location-finder
@@ -40,8 +51,7 @@ location-finder
 
 ```
 
-## Run 
-
+## Running the project locally 
 
 ### Before you start
 
@@ -57,12 +67,11 @@ To run the project, make sure you have the following requirements installed:
 - npm 
 - node 
 
-Inside of the `location-finder` folder, run on a shell: 
+After cloning the repository, inside of the `location-finder` folder, run the commands: 
 
 ```sh
-$ npm install 
-$ npm run build 
-$ npm start # starts the application 
+$ npm install  
+$ npm run dev # starts the application 
 ```
 
 Your server will be running on `http://localhost:{PORT declared on .env}`. 
@@ -76,3 +85,17 @@ To execute the tests, run:
 ```sh
 $ npm test 
 ```
+
+## Accessing the endpoint deployed on Heroku
+
+To access the endpoint, make a request to https://location-blanket.herokuapp.com/places/search passing an array on the body of your request. 
+
+## TODO 
+
+This architecture can be improved by: 
+
+1. Adding a cache database, such as redis, on `PlacesService` that allows to store previous searched locations 
+2. Deploying on a cloud provider such as Azure, AWS or GCP and configuring a loadbalancer before the server, to manage various requests 
+3. Create a batch persistence to create batch requests, specifing dependency between them 
+
+

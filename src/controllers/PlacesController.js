@@ -40,6 +40,14 @@ function getPairs (processedLocations) {
 PlacesController.getLocations = (req, res) => {
     let places = req.body; 
 
+    if (!places || places.length < 50) {
+        return res.status(400).json('Payload must contain more than 50 items.');
+    }
+
+    if (places.length > 100) {
+        return res.status(413).json('Payload must contain less than 100 items.');
+    }
+
     // work in progress - without mock
     let locations = places.map(el => {
         return PlaceServices.searchPlaces(el);

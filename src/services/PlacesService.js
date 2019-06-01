@@ -1,7 +1,6 @@
 const client = require('@google/maps');
+const Location = require('../model/location');
 require('dotenv/config');
-
-import Location from '../model/location';
 
 const googleMapsClient = client.createClient({ 
     key: `${ process.env.GOOGLE_PLACES_API_KEY }`,

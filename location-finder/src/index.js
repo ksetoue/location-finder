@@ -1,12 +1,14 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
 import express from 'express';
 import bodyParser from 'body-parser';
 
 import PlacesRouter from './routers/PlacesRouter';
 
 const app = express();
-const router = express.Router();
+express.Router();
  
+dotenv.config();
+
 const port = process.env.PORT || '3000';
 
 app.use(bodyParser.urlencoded({ extended: true }));

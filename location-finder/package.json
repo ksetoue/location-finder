@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node ./src/index.js",
+    "start": "nodemon --exec babel-node ./src/index.js ",
     "test": "jest"
   },
   "repository": {
@@ -28,7 +28,9 @@
     "@babel/core": "^7.4.5",
     "@babel/node": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
     "babel-jest": "^24.8.0",
+    "babel-register": "^6.26.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.3",
@@ -38,8 +40,8 @@
   "eslintConfig": {
     "extends": "airbnb-base",
     "env": {
-        "es6": true,
-        "browser": true
+      "es6": true,
+      "browser": true
     }
   }
 }

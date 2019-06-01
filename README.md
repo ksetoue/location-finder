@@ -98,4 +98,5 @@ This architecture can be improved by:
 2. Deploying on a cloud provider such as Azure, AWS or GCP and configuring a loadbalancer before the server, to manage various requests 
 3. Create a batch persistence to create batch requests, specifing dependency between them 
 
-
+### Example request using postman: 
+![postman](https://github.com/ksetoue/location-finder/blob/master/postman.png)

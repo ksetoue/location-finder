@@ -97,6 +97,7 @@ This architecture can be improved by:
 1. Adding a cache database, such as redis, on `PlacesService` that allows to store previous searched locations 
 2. Deploying on a cloud provider such as Azure, AWS or GCP and configuring a loadbalancer before the server, to manage various requests 
 3. Create a batch persistence to create batch requests, specifing dependency between them 
+4. Create an index databases that considers the probability of a new query request being one of the items saved on the index database 
 
 ## Request example 
 ```
